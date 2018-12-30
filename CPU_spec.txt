@@ -1,0 +1,18 @@
+Series	Intel Core i7
+Codename	Ivy Bridge
+Clock Rate	2400 - 3400 MHz
+Level 1 Cache	256 KB
+Level 2 Cache	1024 KB
+Level 3 Cache	6144 KB
+Number of Cores / Threads	4 / 8
+Max. Power Consumption (TDP = Thermal Design Power)	45 Watt
+Transistor Count	1400 Million
+Manufacturing Technology	22 nm
+Die Size	160 mm2
+Max. Temperature	105 °C
+Socket	FCPGA988
+Features	HD Graphics 4000, DDR3(L)-1600 Memory Controller, HyperThreading, AVX, Quick Sync, Virtualization
+GPU	Intel HD Graphics 4000 (650 - 1150 MHz)
+64 Bit	64 Bit support
+Hardware Virtualization	VT-x
+Announcement Date	09/30/2012

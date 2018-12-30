@@ -1,0 +1,26 @@
+Tips for Performance Boost
+1. 1D Long Array => reduce memory access!!
+(did not conduct many experiments for comparison but checked few cases and it is useful.)
+
+2. reduce function call especially createSugar & createPeople
+=>reduce creating and deleting stacks with function creation overhead!!
+
+3. Many Execution in a For Loop
+In createPeople & createSugar functions,
+increase # of execution in For loop => reduce branch overhead!!
+(did not conduct many experiments for comparison but checked few cases and it is useful.)
+
+4. USE Register as an iterator variable!!
+=> declaring iterator as a register increase huge amount of performance & speed.
+=> But the thing is you can only use 2 variables as a register in 1 function.
+
+5. Avoid Mutex lock as much as you can.
+=> mutex lock make most of the bottle neck ocurred in parallel computing envirnment from best of my experience.
+===========================================
+REMINDER
+1. implement the code based on 1 main and 4 sub task functions format.
+such as main with peopleMove, peopleMergeAndEat, createPeople, createSugar
+=> but in this format, we need to create and join threads. Creating and destroying
+threads would be costly operation.
+=> Thus, just creating certain number of threads at the beginning of the program and then have a barrier instead of destroying them.
+this approach would be more effient in terms of speed.

@@ -1,0 +1,225 @@
+==== Test Case 1 ====
+total_loop	    100
+map_size	    200
+total_people    500
+
+ = Sequential =
+Map_based_bpt_peopleArr
+t_total 			 0.199714
+t_people_move 		 0.010616
+t_people_merge_eat   0.017707
+t_create_people 	 0.000051
+t_create_sugar 		 0.171330
+
+ = Parallel 1 =
+number of threads    4
+t_total              0.123167
+t_people_move        0.009968
+t_people_merge_eat   0.011411
+t_create_people      0.003013
+t_create_sugar       0.098750
+number of threads    4
+t_total              0.122083
+t_people_move        0.010238
+t_people_merge_eat   0.011561
+t_create_people      0.003053
+t_create_sugar       0.097204
+
+number of threads    8
+t_total              0.109799
+t_people_move        0.010564
+t_people_merge_eat   0.012375
+t_create_people      0.001820
+t_create_sugar       0.085019
+number of threads    8
+t_total              0.112921
+t_people_move        0.010464
+t_people_merge_eat   0.013339
+t_create_people      0.002268
+t_create_sugar       0.086816
+
+number of threads    12
+t_total              0.140366
+t_people_move        0.027281
+t_people_merge_eat   0.022609
+t_create_people      0.000781
+t_create_sugar       0.089662
+number of threads    12
+t_total              0.139446
+t_people_move        0.020352
+t_people_merge_eat   0.024084
+t_create_people      0.000782
+t_create_sugar       0.094205
+
+ = Parallel 2 =
+number of threads    4
+t_total              0.090044
+t_people_move        0.007716
+t_people_merge_eat   0.006631
+t_create_people      0.006007
+t_create_sugar       0.069667
+
+number of threads    8
+t_total              0.091028
+t_people_move        0.006834
+t_people_merge_eat   0.012872
+t_create_people      0.009742
+t_create_sugar       0.061562
+
+number of threads    12
+t_total              0.122499
+t_people_move        0.012545
+t_people_merge_eat   0.014422
+t_create_people      0.003098
+t_create_sugar       0.092412
+
+
+==== Test Case 2 ====
+total_loop	    100
+map_size	    200
+total_people    50,000
+
+ = Sequential =
+Map_based_bpt_peopleArr
+t_total 			 24.043624
+t_people_move 		 1.736508
+t_people_merge_eat   3.431116
+t_create_people 	 0.034094
+t_create_sugar 		 18.841853
+
+ = Parallel =
+number of threads    4
+t_total              11.263566
+t_people_move        1.039436
+t_people_merge_eat   1.811925
+t_create_people      0.074742
+t_create_sugar       8.337318
+number of threads    4
+t_total              11.614558
+t_people_move        1.048048
+t_people_merge_eat   1.832349
+t_create_people      0.090462
+t_create_sugar       8.643534
+
+number of threads    8
+t_total              11.294739
+t_people_move        0.482040
+t_people_merge_eat   1.384952
+t_create_people      0.075143
+t_create_sugar       9.352180
+number of threads    8
+t_total              10.952716
+t_people_move        0.458529
+t_people_merge_eat   1.373882
+t_create_people      0.076924
+t_create_sugar       9.043223
+
+number of threads    12
+t_total              11.237980
+t_people_move        0.452863
+t_people_merge_eat   1.390789
+t_create_people      0.089642
+t_create_sugar       9.304528
+number of threads    12
+t_total              11.526150
+t_people_move        0.460419
+t_people_merge_eat   1.445935
+t_create_people      0.090476
+t_create_sugar       9.529177
+number of threads    12
+t_total              11.473016
+t_people_move        0.453598
+t_people_merge_eat   1.535269
+t_create_people      0.089700
+t_create_sugar       9.394309
+
+ = Parallel 2 =
+number of threads    4
+t_total              8.406154
+t_people_move        1.119509
+t_people_merge_eat   2.000592
+t_create_people      0.326633
+t_create_sugar       4.959360
+
+ number of threads    8
+t_total              8.153977
+t_people_move        0.462335
+t_people_merge_eat   1.259437
+t_create_people      0.333447
+t_create_sugar       6.098705
+
+number of threads    12
+t_total              8.257719
+t_people_move        0.433462
+t_people_merge_eat   1.368865
+t_create_people      0.373862
+t_create_sugar       6.081430
+
+number of threads    24
+t_total              8.166677
+t_people_move        0.384198
+t_people_merge_eat   1.299111
+t_create_people      0.364978
+t_create_sugar       6.118323
+
+
+
+
+ - comparison between parallel
+creating join timing difference
+
+==== Test Case 3 ====
+total_loop	2
+map_size		200
+total_people    100000
+
+number of threads    8
+t_total              0.491695
+t_people_move        0.018842
+t_people_merge_eat   0.057231
+t_create_people      0.170652
+t_create_sugar       0.244970
+number of threads    8
+t_total              0.991447
+t_people_move        0.014942
+t_people_merge_eat   0.049797
+t_create_people      0.740907
+t_create_sugar       0.185799
+
+==== Test Case 4 ====
+total_loop	20
+map_size		200
+total_people    100000
+
+number of threads    8
+t_total              4.291344
+t_people_move        0.184757
+t_people_merge_eat   0.573848
+t_create_people      0.142412
+t_create_sugar       3.390313
+
+number of threads    8
+t_total              3.616633
+t_people_move        0.160141
+t_people_merge_eat   0.501280
+t_create_people      0.648840
+t_create_sugar       2.306358
+
+==== Test Case 5 ====
+total_loop	200
+map_size		200
+total_people    100000
+
+number of threads    8
+t_total              54.509907
+t_people_move        1.739830
+t_people_merge_eat   6.333643
+t_create_people      0.171518
+t_create_sugar       46.264765
+
+number of threads    8
+t_total              37.758328
+t_people_move        1.675442
+t_people_merge_eat   5.440474
+t_create_people      0.685193
+t_create_sugar       29.957068
