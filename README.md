@@ -6,8 +6,10 @@ Significantly improved the speed of the highly optimized sequential program (bas
 
 Minimized overhead by reducing Mutex Lock (less shared memory by all processes), memory access (1D long array instead of 3D map), and using buffering (resolving dependency problem).
 
+
 #### How to run the code
  - move to working directory.
+
 $make : make object files (sugar.o queue.o lcgrand.o) and executable file named "sugar"
 
  - take test_setup.txt as input. Then generate sugar_map.txt & gen_people_list.txt as output.
@@ -17,6 +19,7 @@ $make : make object files (sugar.o queue.o lcgrand.o) and executable file named 
  - the minimum number of threads is 4 and the maximum number of threads is 96.
  - if you don't specify the number of threads, then the default number of thread is 8.
  - this code is based on pthread API.
+
 $./sugar : run executable file (sugar)
 
 
